@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  tasks:
+    - name: making directories
+      file:
+        state: directory
+        path: "/root/{{item.path}}"
+      with_filetree: ROOT/
+      when: item.state == 'directory'
+
+    - name: root user configuration file linking
+      file:
+        state: link
+        src: "{{item.src}}"
+        dest: "/root/{{item.path}}"
+        force: true
+      with_filetree: ROOT/
+      when: item.state == 'file'
+
