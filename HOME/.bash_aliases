@@ -23,4 +23,4 @@ alias nanoc='nano -Y conf'
 
 alias Poker='wine-development ~/.wine/drive_c/Program\ Files/PokerStars.IT/PokerStars.exe'
 
-alias clip="xclip -sel cli"
+alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
