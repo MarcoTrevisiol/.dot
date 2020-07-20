@@ -1,5 +1,14 @@
 [user]
 	email = marco.trevisiol@sns.it
 	name = MarcoTrevisiol
+[push]
+	default = matching
+[color]
+	ui = auto
+[credential]
+	helper = store
 [core]
 	editor = vim
+[alias]
+	last = log -1 --decorate --stat HEAD
+	report = log --oneline --decorate HEAD
