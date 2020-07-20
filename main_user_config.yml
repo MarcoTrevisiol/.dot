@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+    - name: configuration file linking
+      file:
+        state: link
+        src: "{{item.src}}"
+        dest: "{{ansible_env.HOME}}/{{item.path}}"
+        force: true
+      with_filetree: HOME/
+      when: item.state == 'file'
+
