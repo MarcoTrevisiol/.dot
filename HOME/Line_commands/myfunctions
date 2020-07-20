@@ -1,0 +1,30 @@
+# Variabili
+
+# aggiunta del PATH
+export PATH=$PATH:~/Line_commands
+
+
+# Funzioni
+
+# chiama scan_fast [n° rete interna] per lanciare nmap sulla rete n-esima
+# (oppure su quella del Carducci)
+function scanfast
+{
+	if [ $# -ge 1 ]; then
+		rete=$1
+	else
+		rete=6
+	fi
+	echo "scan di 192.168.$rete.0/24"
+	nmap -F 192.168.$rete.0/24
+}
+
+
+function Mine
+{
+	export INTEL_SEPARATE_STENCIL=0
+	cd /afs/uz.sns.it/user/Tess/Svago/Minecraft
+	java -jar MagicLauncher.jar
+}
+
+alias cli="xclip -sel cli"
