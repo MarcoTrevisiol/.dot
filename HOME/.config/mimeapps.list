@@ -1,5 +1,0 @@
-[Added Associations]
-x-scheme-handler/mailto=kmailservice.desktop;
-
-[Default Applications]
-x-scheme-handler/mailto=kmailservice.desktop
