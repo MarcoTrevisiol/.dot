@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: list files
+      shell: echo {{ item.path }} >>mega_log
+      with_filetree: /home/t/Documenti/Libreria_personale/Guide/
+    - name: base
+      shell: echo a >>small_log
+
