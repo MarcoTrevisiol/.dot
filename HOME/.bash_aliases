@@ -12,7 +12,8 @@ alias getMine='cat /afs/uz.sns.it/user/Tess/Svago/Minecraft/mail_fasulla'
 alias emacs='emacs -nw'
 alias nano='nano -c'
 
-alias common='cd /afs/uz.sns.it/common/text/libri'
+alias common='cd /afs/uz.sns.it/common/'
+alias commath='cd /afs/uz.sns.it/common/text/libri/matematica'
 
 alias conti='libreoffice ~/Documenti/Schei/registro.ods'
 
@@ -23,4 +24,4 @@ alias nanoc='nano -Y conf'
 
 alias Poker='wine-development ~/.wine/drive_c/Program\ Files/PokerStars.IT/PokerStars.exe'
 
-alias clip="xclip -sel cli"
+alias mc='. /usr/share/mc/bin/mc-wrapper.sh'

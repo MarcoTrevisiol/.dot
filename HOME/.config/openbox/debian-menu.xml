@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Automatically generated file. Do not edit (see /usr/share/doc/menu/html) -->
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id='/Debian' label='Debian'>
+  <menu id='/Debian/Aiuto' label='Aiuto'>
+    <item label='Debian Reference'>
+      <action name='Execute'><execute>/usr/bin/debian-reference</execute></action>
+    </item>
+    <item label='Info'>
+      <action name='Execute'><execute>x-terminal-emulator  -T &quot;Info&quot; -e sh -c &quot;info&quot;</execute></action>
+    </item>
+    <item label='OCaml docbrowser'>
+      <action name='Execute'><execute>/usr/bin/docbrowser2.byte</execute></action>
+    </item>
+    <item label='TeXdoctk'>
+      <action name='Execute'><execute>/usr/bin/texdoctk</execute></action>
+    </item>
+    <item label='Xfce4-about'>
+      <action name='Execute'><execute>xfce4-about</execute></action>
+    </item>
+    <item label='Xfhelp4'>
+      <action name='Execute'><execute>xfhelp4</execute></action>
+    </item>
+    <item label='Xman'>
+      <action name='Execute'><execute>xman</execute></action>
+    </item>
+    <item label='yelp'>
+      <action name='Execute'><execute>/usr/bin/yelp</execute></action>
+    </item>
+  </menu>
+  <menu id='/Debian/Applicazioni' label='Applicazioni'>
+    <menu id='/Debian/Applicazioni/Accessibilità' label='Accessibilità'>
+      <item label='Xmag'>
+        <action name='Execute'><execute>xmag</execute></action>
+      </item>
+      <item label='xvkbd'>
+        <action name='Execute'><execute>/usr/bin/xvkbd</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Apprendimento' label='Apprendimento'>
+      <item label='Anki' icon='/usr/share/pixmaps/anki.xpm'>
+        <action name='Execute'><execute>/usr/bin/anki</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Audio' label='Audio'>
+      <item label='Audacity' icon='/usr/share/pixmaps/audacity32.xpm'>
+        <action name='Execute'><execute>/usr/bin/audacity</execute></action>
+      </item>
+      <item label='Ex Falso'>
+        <action name='Execute'><execute>/usr/bin/exfalso</execute></action>
+      </item>
+      <item label='grecord (GNOME 2.0 Recorder)' icon='/usr/share/pixmaps/gnome-grecord.xpm'>
+        <action name='Execute'><execute>/usr/bin/gnome-sound-recorder</execute></action>
+      </item>
+      <item label='pavucontrol'>
+        <action name='Execute'><execute>/usr/bin/pavucontrol</execute></action>
+      </item>
+      <item label='pavumeter'>
+        <action name='Execute'><execute>/usr/bin/pavumeter</execute></action>
+      </item>
+      <item label='Quod Libet'>
+        <action name='Execute'><execute>/usr/bin/quodlibet</execute></action>
+      </item>
+      <item label='Rhythmbox' icon='/usr/share/pixmaps/rhythmbox-small.xpm'>
+        <action name='Execute'><execute>/usr/bin/rhythmbox</execute></action>
+      </item>
+      <item label='Sound Juicer' icon='/usr/share/pixmaps/sound-juicer.xpm'>
+        <action name='Execute'><execute>/usr/bin/sound-juicer</execute></action>
+      </item>
+      <item label='Xfce Mixer' icon='/usr/share/pixmaps/xfce4-mixer.xpm'>
+        <action name='Execute'><execute>/usr/bin/xfce4-mixer</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Editor' label='Editor'>
+      <item label='Chamo'>
+        <action name='Execute'><execute>/usr/bin/chamo.byte</execute></action>
+      </item>
+      <item label='Emacs 23 (text)' icon='/usr/share/emacs/23.4/etc/images/icons/hicolor/32x32/apps/emacs.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Emacs 23 (text)&quot; -e sh -c &quot;/usr/bin/emacs23 -nw&quot;</execute></action>
+      </item>
+      <item label='Emacs 23 (X11)' icon='/usr/share/emacs/23.4/etc/images/icons/hicolor/32x32/apps/emacs.xpm'>
+        <action name='Execute'><execute>/usr/bin/emacs23</execute></action>
+      </item>
+      <item label='Emacs Snapshot (GTK)' icon='/usr/share/emacs/24.3.50/etc/emacs.xpm'>
+        <action name='Execute'><execute>/usr/bin/emacs-snapshot-gtk</execute></action>
+      </item>
+      <item label='Emacs Snapshot (text)' icon='/usr/share/emacs/24.3.50/etc/emacs.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Emacs Snapshot (text)&quot; -e sh -c &quot;/usr/bin/emacs-snapshot -nw&quot;</execute></action>
+      </item>
+      <item label='Gedit' icon='/usr/share/pixmaps/gedit-icon.xpm'>
+        <action name='Execute'><execute>/usr/bin/gedit</execute></action>
+      </item>
+      <item label='Kile' icon='/usr/share/pixmaps/kile.xpm'>
+        <action name='Execute'><execute>/usr/bin/kile</execute></action>
+      </item>
+      <item label='MousePad' icon='/usr/share/pixmaps/mousepad.xpm'>
+        <action name='Execute'><execute>/usr/bin/mousepad</execute></action>
+      </item>
+      <item label='Nano' icon='/usr/share/nano/nano-menu.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Nano&quot; -e sh -c &quot;/bin/nano&quot;</execute></action>
+      </item>
+      <item label='Xedit'>
+        <action name='Execute'><execute>xedit</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Emulatori di terminale' label='Emulatori di terminale'>
+      <item label='Gnome Terminal' icon='/usr/share/pixmaps/gnome-terminal.xpm'>
+        <action name='Execute'><execute>/usr/bin/gnome-terminal</execute></action>
+      </item>
+      <item label='Xfce Terminal' icon='/usr/share/pixmaps/terminal.xpm'>
+        <action name='Execute'><execute>/usr/bin/xfce4-terminal</execute></action>
+      </item>
+      <item label='Xfterm4'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Xfterm4&quot; -e sh -c &quot;xfterm4&quot;</execute></action>
+      </item>
+      <item label='XTerm' icon='/usr/share/pixmaps/xterm-color_32x32.xpm'>
+        <action name='Execute'><execute>xterm</execute></action>
+      </item>
+      <item label='X-Terminal as root (GKsu)' icon='/usr/share/pixmaps/gksu-debian.xpm'>
+        <action name='Execute'><execute>/usr/bin/gksu -u root /usr/bin/x-terminal-emulator</execute></action>
+      </item>
+      <item label='XTerm (Unicode)' icon='/usr/share/pixmaps/xterm-color_32x32.xpm'>
+        <action name='Execute'><execute>uxterm</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Gestione dati' label='Gestione dati'>
+      <item label='LibreOffice Base' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-base.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --base</execute></action>
+      </item>
+      <item label='pgAdmin III' icon='/usr/share/pixmaps/pgadmin3.xpm'>
+        <action name='Execute'><execute>/usr/bin/pgadmin3</execute></action>
+      </item>
+      <item label='SQLite database browser' icon='/usr/share/pixmaps/sqlitebrowser.xpm'>
+        <action name='Execute'><execute>/usr/bin/sqlitebrowser</execute></action>
+      </item>
+      <item label='Tomboy' icon='/usr/share/pixmaps/tomboy-32.xpm'>
+        <action name='Execute'><execute>/usr/bin/tomboy</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Gestione file' label='Gestione file'>
+      <item label='Baobab' icon='/usr/share/pixmaps/baobab.xpm'>
+        <action name='Execute'><execute>/usr/bin/baobab</execute></action>
+      </item>
+      <item label='Brasero'>
+        <action name='Execute'><execute>/usr/bin/brasero</execute></action>
+      </item>
+      <item label='File-Roller' icon='/usr/share/pixmaps/file-roller.xpm'>
+        <action name='Execute'><execute>/usr/bin/file-roller</execute></action>
+      </item>
+      <item label='Gentoo' icon='/usr/share/pixmaps/icon_gentoo_small.xpm'>
+        <action name='Execute'><execute>gentoo</execute></action>
+      </item>
+      <item label='gmrun'>
+        <action name='Execute'><execute>/usr/bin/gmrun</execute></action>
+      </item>
+      <item label='Nautilus' icon='/usr/share/pixmaps/nautilus.xpm'>
+        <action name='Execute'><execute>/usr/bin/nautilus</execute></action>
+      </item>
+      <item label='Thunar'>
+        <action name='Execute'><execute>/usr/bin/thunar</execute></action>
+      </item>
+      <item label='Xfdesktop'>
+        <action name='Execute'><execute>xfdesktop</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Grafica' label='Grafica'>
+      <item label='Blender' icon='/usr/share/pixmaps/blender-32x32.xpm'>
+        <action name='Execute'><execute>/usr/bin/blender</execute></action>
+      </item>
+      <item label='gtk-recordmydesktop' icon='/usr/share/pixmaps/gtk-recordmydesktop.xpm'>
+        <action name='Execute'><execute>/usr/bin/gtk-recordmydesktop</execute></action>
+      </item>
+      <item label='Hugin'>
+        <action name='Execute'><execute>/usr/bin/hugin</execute></action>
+      </item>
+      <item label='ImageMagick' icon='/usr/share/pixmaps/display.im6.xpm'>
+        <action name='Execute'><execute>/usr/bin/display.im6 logo:</execute></action>
+      </item>
+      <item label='Inkscape' icon='/usr/share/pixmaps/inkscape.xpm'>
+        <action name='Execute'><execute>/usr/bin/inkscape</execute></action>
+      </item>
+      <item label='Kdenlive' icon='/usr/share/pixmaps/kdenlive.xpm'>
+        <action name='Execute'><execute>/usr/bin/kdenlive</execute></action>
+      </item>
+      <item label='Kino' icon='/usr/share/pixmaps/kino.xpm'>
+        <action name='Execute'><execute>/usr/bin/kino</execute></action>
+      </item>
+      <item label='LibreOffice Draw' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-draw.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --draw</execute></action>
+      </item>
+      <item label='PTBatcherGUI'>
+        <action name='Execute'><execute>/usr/bin/PTBatcherGUI</execute></action>
+      </item>
+      <item label='Text Xaos'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Text Xaos&quot; -e sh -c &quot;/usr/bin/xaos -driver aa&quot;</execute></action>
+      </item>
+      <item label='The GIMP' icon='/usr/share/pixmaps/gimp.xpm'>
+        <action name='Execute'><execute>/usr/bin/gimp</execute></action>
+      </item>
+      <item label='Xaos'>
+        <action name='Execute'><execute>/usr/bin/xaos -driver x11</execute></action>
+      </item>
+      <item label='xfig' icon='/usr/share/pixmaps/xfig32x32.xpm'>
+        <action name='Execute'><execute>/usr/bin/xfig</execute></action>
+      </item>
+      <item label='XSane' icon='/usr/share/pixmaps/xsane.xpm'>
+        <action name='Execute'><execute>/usr/bin/xsane</execute></action>
+      </item>
+      <item label='X Window Snapshot'>
+        <action name='Execute'><execute>xwd | xwud</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Programmazione' label='Programmazione'>
+      <item label='Cameleon'>
+        <action name='Execute'><execute>/usr/bin/cameleon2.byte</execute></action>
+      </item>
+      <item label='Data Display Debugger'>
+        <action name='Execute'><execute>/usr/bin/ddd</execute></action>
+      </item>
+      <item label='DBForge'>
+        <action name='Execute'><execute>/usr/bin/dbforge2.gui.byte</execute></action>
+      </item>
+      <item label='DevHelp' icon='/usr/share/pixmaps/devhelp-debian.xpm'>
+        <action name='Execute'><execute>/usr/bin/devhelp</execute></action>
+      </item>
+      <item label='GDB'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;GDB&quot; -e sh -c &quot;/usr/bin/gdb&quot;</execute></action>
+      </item>
+      <item label='Geany' icon='/usr/share/pixmaps/geany.xpm'>
+        <action name='Execute'><execute>/usr/bin/geany</execute></action>
+      </item>
+      <item label='Glade 3' icon='/usr/share/pixmaps/glade.xpm'>
+        <action name='Execute'><execute>/usr/bin/glade</execute></action>
+      </item>
+      <item label='Guile 1.8'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Guile 1.8&quot; -e sh -c &quot;/usr/bin/guile-1.8&quot;</execute></action>
+      </item>
+      <item label='Nemiver' icon='/usr/share/pixmaps/nemiver.xpm'>
+        <action name='Execute'><execute>/usr/bin/nemiver</execute></action>
+      </item>
+      <item label='Ocaml' icon='/usr/share/pixmaps/ocaml.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Ocaml&quot; -e sh -c &quot;/usr/bin/ocaml&quot;</execute></action>
+      </item>
+      <item label='OCamlCVS'>
+        <action name='Execute'><execute>/usr/bin/ocamlcvs2.byte</execute></action>
+      </item>
+      <item label='Python (v2.6)' icon='/usr/share/pixmaps/python2.6.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Python (v2.6)&quot; -e sh -c &quot;/usr/bin/python2.6&quot;</execute></action>
+      </item>
+      <item label='Python (v2.7)' icon='/usr/share/pixmaps/python2.7.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Python (v2.7)&quot; -e sh -c &quot;/usr/bin/python2.7&quot;</execute></action>
+      </item>
+      <item label='Python (v3.2)' icon='/usr/share/pixmaps/python3.2.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Python (v3.2)&quot; -e sh -c &quot;/usr/bin/python3.2&quot;</execute></action>
+      </item>
+      <item label='Qt Assistant'>
+        <action name='Execute'><execute>/usr/bin/assistant-qt4</execute></action>
+      </item>
+      <item label='Qt Designer'>
+        <action name='Execute'><execute>/usr/bin/designer-qt4</execute></action>
+      </item>
+      <item label='Qt Linguist'>
+        <action name='Execute'><execute>/usr/bin/linguist-qt4</execute></action>
+      </item>
+      <item label='Report'>
+        <action name='Execute'><execute>/usr/bin/report2.gui.byte</execute></action>
+      </item>
+      <item label='Ruby (irb1.8)'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Ruby (irb1.8)&quot; -e sh -c &quot;/usr/bin/irb1.8&quot;</execute></action>
+      </item>
+      <item label='Ruby (irb1.9.1)'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Ruby (irb1.9.1)&quot; -e sh -c &quot;/usr/bin/irb1.9.1&quot;</execute></action>
+      </item>
+      <item label='Tclsh8.4'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Tclsh8.4&quot; -e sh -c &quot;/usr/bin/tclsh8.4&quot;</execute></action>
+      </item>
+      <item label='Tclsh8.5'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Tclsh8.5&quot; -e sh -c &quot;/usr/bin/tclsh8.5&quot;</execute></action>
+      </item>
+      <item label='TkWish8.4'>
+        <action name='Execute'><execute>x-terminal-emulator -e /usr/bin/wish8.4</execute></action>
+      </item>
+      <item label='TkWish8.5'>
+        <action name='Execute'><execute>x-terminal-emulator -e /usr/bin/wish8.5</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Rete' label='Rete'>
+      <item label='bmon'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;bmon&quot; -e sh -c &quot;/usr/bin/bmon&quot;</execute></action>
+      </item>
+      <menu id='/Debian/Applicazioni/Rete/Comunicazione' label='Comunicazione'>
+        <item label='Evolution' icon='/usr/share/pixmaps/evolution.xpm'>
+          <action name='Execute'><execute>/usr/bin/evolution</execute></action>
+        </item>
+        <item label='Icedove Mail' icon='/usr/share/pixmaps/icedove.xpm'>
+          <action name='Execute'><execute>icedove</execute></action>
+        </item>
+        <item label='Pidgin' icon='/usr/share/pixmaps/pidgin-menu.xpm'>
+          <action name='Execute'><execute>/usr/bin/pidgin</execute></action>
+        </item>
+        <item label='Vinagre'>
+          <action name='Execute'><execute>vinagre</execute></action>
+        </item>
+        <item label='Xbiff'>
+          <action name='Execute'><execute>xbiff</execute></action>
+        </item>
+        <item label='X Chat' icon='/usr/share/icons/xchat.xpm'>
+          <action name='Execute'><execute>/usr/bin/xchat</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Rete/Monitoraggio' label='Monitoraggio'>
+        <item label='Wireshark' icon='/usr/share/pixmaps/wsicon32.xpm'>
+          <action name='Execute'><execute>/usr/bin/wireshark</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Rete/Navigazione web' label='Navigazione web'>
+        <item label='Chromium'>
+          <action name='Execute'><execute>chromium</execute></action>
+        </item>
+        <item label='Iceweasel' icon='/usr/share/pixmaps/iceweasel.xpm'>
+          <action name='Execute'><execute>iceweasel</execute></action>
+        </item>
+        <item label='Links 2' icon='/usr/share/pixmaps/links2.xpm'>
+          <action name='Execute'><execute>/usr/bin/links2 -g</execute></action>
+        </item>
+        <item label='Links 2 (text)' icon='/usr/share/pixmaps/links2.xpm'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Links 2 (text)&quot; -e sh -c &quot;/usr/bin/links2&quot;</execute></action>
+        </item>
+        <item label='Lynx-cur'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Lynx-cur&quot; -e sh -c &quot;lynx&quot;</execute></action>
+        </item>
+        <item label='Midori'>
+          <action name='Execute'><execute>midori</execute></action>
+        </item>
+        <item label='nomnom' icon='/usr/share/pixmaps/nomnom.xpm'>
+          <action name='Execute'><execute>/usr/bin/nomnom</execute></action>
+        </item>
+        <item label='w3m'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;w3m&quot; -e sh -c &quot;/usr/bin/w3m /usr/share/doc/w3m/MANUAL.html&quot;</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Rete/Trasferimento file' label='Trasferimento file'>
+        <item label='git-annex assistant'>
+          <action name='Execute'><execute>git-annex webapp</execute></action>
+        </item>
+        <item label='Transmission BitTorrent Client (GTK)' icon='/usr/share/pixmaps/transmission.xpm'>
+          <action name='Execute'><execute>/usr/bin/transmission-gtk</execute></action>
+        </item>
+      </menu>
+    </menu>
+    <menu id='/Debian/Applicazioni/Scienza' label='Scienza'>
+      <menu id='/Debian/Applicazioni/Scienza/Astronomia' label='Astronomia'>
+        <item label='stellarium' icon='/usr/share/pixmaps/stellarium.xpm'>
+          <action name='Execute'><execute>/usr/bin/stellarium</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Scienza/Elettronica' label='Elettronica'>
+        <item label='easy_spice'>
+          <action name='Execute'><execute>/usr/bin/xterm -iconic -n $(HOME) easy_spice_log -e /usr/bin/easy_spice</execute></action>
+        </item>
+        <item label='gschem'>
+          <action name='Execute'><execute>/usr/bin/gschem</execute></action>
+        </item>
+        <item label='KICAD' icon='/usr/share/pixmaps/icon_kicad.xpm'>
+          <action name='Execute'><execute>/usr/bin/kicad</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Scienza/Matematica' label='Matematica'>
+        <item label='Bc'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Bc&quot; -e sh -c &quot;/usr/bin/bc&quot;</execute></action>
+        </item>
+        <item label='Dc'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Dc&quot; -e sh -c &quot;/usr/bin/dc&quot;</execute></action>
+        </item>
+        <item label='GCalcTool' icon='/usr/share/pixmaps/gcalctool.xpm'>
+          <action name='Execute'><execute>/usr/bin/gcalctool</execute></action>
+        </item>
+        <item label='Gnuplot'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Gnuplot&quot; -e sh -c &quot;/usr/bin/gnuplot&quot;</execute></action>
+        </item>
+        <item label='Grace' icon='/usr/share/pixmaps/grace-menu.xpm'>
+          <action name='Execute'><execute>/usr/bin/xmgrace</execute></action>
+        </item>
+        <item label='LibreOffice Math' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-math.xpm'>
+          <action name='Execute'><execute>/usr/bin/libreoffice --math</execute></action>
+        </item>
+        <item label='Octave'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Octave&quot; -e sh -c &quot;/usr/bin/octave&quot;</execute></action>
+        </item>
+        <item label='wxMaxima' icon='/usr/share/pixmaps/wxmaxima-32.xpm'>
+          <action name='Execute'><execute>/usr/bin/wxmaxima</execute></action>
+        </item>
+        <item label='Xcalc'>
+          <action name='Execute'><execute>xcalc</execute></action>
+        </item>
+      </menu>
+    </menu>
+    <menu id='/Debian/Applicazioni/Shell' label='Shell'>
+      <item label='Bash'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Bash&quot; -e sh -c &quot;/bin/bash --login&quot;</execute></action>
+      </item>
+      <item label='Dash'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Dash&quot; -e sh -c &quot;/bin/dash -i&quot;</execute></action>
+      </item>
+      <item label='screenie'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;screenie&quot; -e sh -c &quot;/usr/bin/screenie&quot;</execute></action>
+      </item>
+      <item label='Sh'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Sh&quot; -e sh -c &quot;/bin/sh --login&quot;</execute></action>
+      </item>
+      <item label='tcsh'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;tcsh&quot; -e sh -c &quot;/bin/tcsh&quot;</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Sistema' label='Sistema'>
+      <item label='Alternatives Configurator' icon='/usr/share/pixmaps/galternatives.xpm'>
+        <action name='Execute'><execute>/usr/sbin/galternatives</execute></action>
+      </item>
+      <menu id='/Debian/Applicazioni/Sistema/Amministrazione' label='Amministrazione'>
+        <item label='Debian Task selector'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Debian Task selector&quot; -e sh -c &quot;su-to-root -c tasksel&quot;</execute></action>
+        </item>
+        <item label='Editres'>
+          <action name='Execute'><execute>editres</execute></action>
+        </item>
+        <item label='Gnome Control Center' icon='/usr/share/pixmaps/gnome-control-center.xpm'>
+          <action name='Execute'><execute>/usr/bin/gnome-control-center</execute></action>
+        </item>
+        <item label='GNOME Network Tool' icon='/usr/share/pixmaps/gnome-nettool.xpm'>
+          <action name='Execute'><execute>/usr/bin/gnome-nettool</execute></action>
+        </item>
+        <item label='nitrogen'>
+          <action name='Execute'><execute>/usr/bin/nitrogen</execute></action>
+        </item>
+        <item label='Openbox Configuration Manager' icon='/usr/share/pixmaps/obconf.xpm'>
+          <action name='Execute'><execute>/usr/bin/obconf</execute></action>
+        </item>
+        <item label='Openbox Menu Editor'>
+          <action name='Execute'><execute>/usr/bin/obmenu</execute></action>
+        </item>
+        <item label='Reportbug'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Reportbug&quot; -e sh -c &quot;/usr/bin/reportbug --exit-prompt&quot;</execute></action>
+        </item>
+        <item label='Reportbug (GTK+)'>
+          <action name='Execute'><execute>/usr/bin/reportbug --exit-prompt --ui gtk2</execute></action>
+        </item>
+        <item label='TeXconfig'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;TeXconfig&quot; -e sh -c &quot;/usr/bin/texconfig&quot;</execute></action>
+        </item>
+        <item label='Xclipboard'>
+          <action name='Execute'><execute>xclipboard</execute></action>
+        </item>
+        <item label='Xfce Application Finder' icon='/usr/share/pixmaps/xfce4-appfinder.xpm'>
+          <action name='Execute'><execute>xfce4-appfinder</execute></action>
+        </item>
+        <item label='Xfontsel'>
+          <action name='Execute'><execute>xfontsel</execute></action>
+        </item>
+        <item label='xfprint4'>
+          <action name='Execute'><execute>xfprint4</execute></action>
+        </item>
+        <item label='XFrun4'>
+          <action name='Execute'><execute>xfrun4</execute></action>
+        </item>
+        <item label='Xkill'>
+          <action name='Execute'><execute>xkill</execute></action>
+        </item>
+        <item label='Xrefresh'>
+          <action name='Execute'><execute>xrefresh</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Sistema/Gestione pacchetti' label='Gestione pacchetti'>
+        <item label='Aptitude Package Manager (text)'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Aptitude Package Manager (text)&quot; -e sh -c &quot;/usr/bin/aptitude-curses&quot;</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Sistema/Hardware' label='Hardware'>
+        <item label='NVIDIA Settings'>
+          <action name='Execute'><execute>/usr/bin/nvidia-settings</execute></action>
+        </item>
+        <item label='Xvidtune'>
+          <action name='Execute'><execute>xvidtune</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Sistema/Monitoraggio' label='Monitoraggio'>
+        <item label='Conky'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Conky&quot; -e sh -c &quot;/usr/bin/conky&quot;</execute></action>
+        </item>
+        <item label='GNOME system monitor'>
+          <action name='Execute'><execute>/usr/bin/gnome-system-monitor</execute></action>
+        </item>
+        <item label='htop'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;htop&quot; -e sh -c &quot;/usr/bin/htop&quot;</execute></action>
+        </item>
+        <item label='Pstree' icon='/usr/share/pixmaps/pstree16.xpm'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Pstree&quot; -e sh -c &quot;/usr/bin/pstree.x11&quot;</execute></action>
+        </item>
+        <item label='Top'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Top&quot; -e sh -c &quot;/usr/bin/top&quot;</execute></action>
+        </item>
+        <item label='Xconsole'>
+          <action name='Execute'><execute>xconsole -file /dev/xconsole</execute></action>
+        </item>
+        <item label='Xev'>
+          <action name='Execute'><execute>x-terminal-emulator -e xev</execute></action>
+        </item>
+        <item label='Xload'>
+          <action name='Execute'><execute>xload</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applicazioni/Sistema/Sicurezza' label='Sicurezza'>
+        <item label='Seahorse' icon='/usr/share/pixmaps/seahorse.xpm'>
+          <action name='Execute'><execute>/usr/bin/seahorse</execute></action>
+        </item>
+      </menu>
+    </menu>
+    <menu id='/Debian/Applicazioni/Testo' label='Testo'>
+      <item label='Character map'>
+        <action name='Execute'><execute>/usr/bin/gucharmap</execute></action>
+      </item>
+      <item label='Fortune'>
+        <action name='Execute'><execute>sh -c &apos;while /usr/games/fortune | col -x | xmessage -center -buttons OK:1,Another:0 -default OK -file - ; do :; done&apos;</execute></action>
+      </item>
+      <item label='GNOME Dictionary' icon='/usr/share/pixmaps/gdict.xpm'>
+        <action name='Execute'><execute>/usr/bin/gnome-dictionary</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Ufficio' label='Ufficio'>
+      <item label='LibreOffice Calc' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --calc</execute></action>
+      </item>
+      <item label='LibreOffice Impress' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-impress.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --impress</execute></action>
+      </item>
+      <item label='LibreOffice Writer' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-writer.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --writer</execute></action>
+      </item>
+      <item label='LyX Document Processor' icon='/usr/share/pixmaps/lyx-32x32.xpm'>
+        <action name='Execute'><execute>lyx</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Video' label='Video'>
+      <item label='Totem' icon='/usr/share/pixmaps/totem.xpm'>
+        <action name='Execute'><execute>/usr/bin/totem</execute></action>
+      </item>
+      <item label='VLC media player' icon='/usr/share/icons/hicolor/32x32/apps/vlc.xpm'>
+        <action name='Execute'><execute>/usr/bin/qvlc</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applicazioni/Visualizzatori' label='Visualizzatori'>
+      <item label='Epdfview' icon='/usr/share/pixmaps/epdfview.xpm'>
+        <action name='Execute'><execute>/usr/bin/epdfview</execute></action>
+      </item>
+      <item label='Evince' icon='/usr/share/pixmaps/evince.xpm'>
+        <action name='Execute'><execute>/usr/bin/evince</execute></action>
+      </item>
+      <item label='Eye of GNOME' icon='/usr/share/pixmaps/gnome-eog.xpm'>
+        <action name='Execute'><execute>/usr/bin/eog</execute></action>
+      </item>
+      <item label='GV' icon='/usr/share/pixmaps/mini-gv.xpm'>
+        <action name='Execute'><execute>/usr/bin/gv</execute></action>
+      </item>
+      <item label='Shotwell'>
+        <action name='Execute'><execute>/usr/bin/shotwell</execute></action>
+      </item>
+      <item label='Xditview'>
+        <action name='Execute'><execute>xditview</execute></action>
+      </item>
+      <item label='XDvi'>
+        <action name='Execute'><execute>/usr/bin/xdvi</execute></action>
+      </item>
+    </menu>
+  </menu>
+  <menu id='/Debian/Gestori finestre' label='Gestori finestre'>
+    <item label='Openbox' icon='/usr/share/pixmaps/openbox.xpm'>
+      <action name='Restart'><execute>/usr/bin/openbox</execute></action>
+    </item>
+    <item label='XFwm'>
+      <action name='Restart'><execute>xfwm4</execute></action>
+    </item>
+  </menu>
+  <menu id='/Debian/Giochi' label='Giochi'>
+    <menu id='/Debian/Giochi/A blocchi' label='A blocchi'>
+      <item label='Frozen-Bubble' icon='/usr/share/pixmaps/frozen-bubble.xpm'>
+        <action name='Execute'><execute>/usr/games/frozen-bubble</execute></action>
+      </item>
+      <item label='XJump' icon='/usr/share/pixmaps/xjump-icon.xpm'>
+        <action name='Execute'><execute>/usr/games/xjump</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Giochi/Azione' label='Azione'>
+      <item label='Granatier' icon='/usr/share/pixmaps/granatier.xpm'>
+        <action name='Execute'><execute>/usr/games/granatier</execute></action>
+      </item>
+      <item label='Nexuiz' icon='/usr/share/pixmaps/nexuiz.xpm'>
+        <action name='Execute'><execute>/usr/games/nexuiz</execute></action>
+      </item>
+      <item label='Teeworlds' icon='/usr/share/pixmaps/teeworlds.xpm'>
+        <action name='Execute'><execute>/usr/games/teeworlds --quiet</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Giochi/Carte' label='Carte'>
+      <item label='Gnome FreeCell' icon='/usr/share/pixmaps/freecell.xpm'>
+        <action name='Execute'><execute>/usr/games/sol --variation freecell</execute></action>
+      </item>
+      <item label='Gnome Solitaire Games' icon='/usr/share/pixmaps/aisleriot.xpm'>
+        <action name='Execute'><execute>/usr/games/sol</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Giochi/Da tavolo' label='Da tavolo'>
+      <item label='Chess Net'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Chess Net&quot; -e sh -c &quot;/usr/games/xboard -ics -icshost chess.net&quot;</execute></action>
+      </item>
+      <item label='Default'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Default&quot; -e sh -c &quot;/usr/games/xboard -ics&quot;</execute></action>
+      </item>
+      <item label='Free I.C.S.'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Free I.C.S.&quot; -e sh -c &quot;/usr/games/xboard -ics -icshost freechess.org&quot;</execute></action>
+      </item>
+      <item label='GnuChess'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;GnuChess&quot; -e sh -c &quot;/usr/games/gnuchess&quot;</execute></action>
+      </item>
+      <item label='Internet Chess Club'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Internet Chess Club&quot; -e sh -c &quot;/usr/games/xboard -ics -icshost chessclub.com&quot;</execute></action>
+      </item>
+      <item label='Scid' icon='/usr/share/pixmaps/scid.xpm'>
+        <action name='Execute'><execute>/usr/games/scid</execute></action>
+      </item>
+      <item label='XBoard'>
+        <action name='Execute'><execute>/usr/games/xboard -xncp</execute></action>
+      </item>
+      <item label='XBoard (passive chessboard)'>
+        <action name='Execute'><execute>/usr/games/xboard -ncp</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Giochi/Giocattoli' label='Giocattoli'>
+      <item label='Flip Screen'>
+        <action name='Execute'><execute>/usr/games/xflip</execute></action>
+      </item>
+      <item label='Meltdown'>
+        <action name='Execute'><execute>/usr/games/meltdown</execute></action>
+      </item>
+      <item label='Oclock'>
+        <action name='Execute'><execute>oclock</execute></action>
+      </item>
+      <item label='Xclock (analog)'>
+        <action name='Execute'><execute>xclock -analog</execute></action>
+      </item>
+      <item label='Xclock (digital)'>
+        <action name='Execute'><execute>xclock -digital -update 1</execute></action>
+      </item>
+      <item label='Xeyes'>
+        <action name='Execute'><execute>xeyes</execute></action>
+      </item>
+      <item label='Xlogo'>
+        <action name='Execute'><execute>xlogo</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Giochi/Strategia' label='Strategia'>
+      <item label='widelands'>
+        <action name='Execute'><execute>/usr/games/widelands</execute></action>
+      </item>
+    </menu>
+  </menu>
+  <menu id='/Debian/Schermo' label='Schermo'>
+    <menu id='/Debian/Schermo/Blocca schermo' label='Blocca schermo'>
+      <item label='Lock Screen (XScreenSaver)'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver-command -lock</execute></action>
+      </item>
+      <item label='Xflock4'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Xflock4&quot; -e sh -c &quot;xflock4&quot;</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Schermo/Salva schermo' label='Salva schermo'>
+      <item label='Activate ScreenSaver (Next)'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver-command -next</execute></action>
+      </item>
+      <item label='Activate ScreenSaver (Previous)'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver-command -prev</execute></action>
+      </item>
+      <item label='Activate ScreenSaver (Random)'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver-command -activate</execute></action>
+      </item>
+      <item label='Demo Screen Hacks'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver-command -demo</execute></action>
+      </item>
+      <item label='Disable XScreenSaver'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver-command -exit</execute></action>
+      </item>
+      <item label='Enable XScreenSaver'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver</execute></action>
+      </item>
+      <item label='Reinitialize XScreenSaver'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver-command -restart</execute></action>
+      </item>
+      <item label='ScreenSaver Preferences'>
+        <action name='Execute'><execute>/usr/bin/xscreensaver-command -prefs</execute></action>
+      </item>
+    </menu>
+  </menu>
+</menu>
+
+</openbox_menu>
