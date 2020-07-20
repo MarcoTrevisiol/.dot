@@ -1,0 +1,4 @@
+nitrogen --restore &
+tint2 &
+xscreensaver -no-splash &
+#Telegram &
