@@ -6,4 +6,6 @@
       with_filetree: /home/t/Documenti/Libreria_personale/Guide/
     - name: base
       shell: echo a >>small_log
+      with_filetree: HOME/
+      when: item.state == 'file'
 
