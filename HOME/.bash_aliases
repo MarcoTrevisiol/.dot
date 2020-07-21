@@ -28,3 +28,4 @@ alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 alias clip="xclip -sel cli"
 
 alias ansible-pull="ANSIBLE_FORCE_COLOR=true ansible-pull"
+alias ansible-pull-main="ansible-pull -U /home/t/gitbares/personal-workstation-config.git/ main_user_config.yml"
