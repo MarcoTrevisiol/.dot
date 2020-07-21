@@ -26,3 +26,5 @@ alias Poker='wine-development ~/.wine/drive_c/Program\ Files/PokerStars.IT/Poker
 
 alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 alias clip="xclip -sel cli"
+
+alias ansible-pull="ANSIBLE_FORCE_COLOR=true ansible-pull"
