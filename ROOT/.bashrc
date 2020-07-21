@@ -90,7 +90,7 @@ alias cp='cp -v'
 alias mv='mv -v'
 
 alias ansible-pull="ANSIBLE_FORCE_COLOR=true ansible-pull"
-alias ansible-pull-main="ansible-pull -U /home/t/gitbares/personal-workstation-config.git/ main_user_config.yml"
+alias ansible-pull-root="ansible-pull -U /home/t/gitbares/personal-workstation-config.git/ root_user_config.yml"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
