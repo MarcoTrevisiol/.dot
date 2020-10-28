@@ -17,5 +17,9 @@ alias ansible-pull-main="ansible-pull -U /home/t/gitbares/personal-workstation-c
 alias su="su -"
 
 alias jq="jq --color-output"
-alias less="less -R"
+alias less="less -RSQ"
+alias man="man -P 'less -Q'"
+alias pdflatex="pdflatex -interaction=nonstopmode"
+
+alias rmview="rmview ~/Documenti/Dottorato/Codocenza/rmview/mia_config.json"
 

@@ -120,5 +120,6 @@ fi
 
 ## Mie aggiunte
 [[ -d ~/Line_commands ]] && export PATH="${PATH}":~/Line_commands
+[[ -d ~/.local/bin ]] && export PATH="${PATH}":~/.local/bin
 [[ -f ~/Line_commands/myfunctions ]] && . ~/Line_commands/myfunctions
 

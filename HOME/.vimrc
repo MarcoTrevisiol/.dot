@@ -28,18 +28,18 @@ else
   endif
 endif
 
-if &t_Co > 2 || has("gui_running")
-  " Switch on highlighting the last used search pattern.
-  set hlsearch
-endif
-
-" Put these in an autocmd group, so that we can delete them easily.
-augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
-augroup END
+" if &t_Co > 2 || has("gui_running")
+"   " Switch on highlighting the last used search pattern.
+"   set hlsearch
+" endif
+" 
+" " Put these in an autocmd group, so that we can delete them easily.
+" augroup vimrcEx
+"   au!
+" 
+"   " For all text files set 'textwidth' to 78 characters.
+"   autocmd FileType text setlocal textwidth=78
+" augroup END
 
 " Add optional packages.
 "
@@ -47,11 +47,15 @@ augroup END
 " compatible.
 " The ! means the package won't be loaded right away but when plugins are
 " loaded during initialization.
-if has('syntax') && has('eval')
-  packadd! matchit
-endif
+" if has('syntax') && has('eval')
+"   packadd! matchit
+" endif
 
 set mouse=
 filetype plugin on
 filetype indent on
 syntax on
+set visualbell
+
+" Quickly insert an empty new line without entering insert mode
+nnoremap <C-o> o<Esc>
