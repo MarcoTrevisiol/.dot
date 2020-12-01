@@ -27,4 +27,3 @@ function Mine
 	java -jar MagicLauncher.jar
 }
 
-alias cli="xclip -sel cli"

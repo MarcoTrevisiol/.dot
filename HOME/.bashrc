@@ -123,3 +123,5 @@ fi
 [[ -d ~/.local/bin ]] && export PATH="${PATH}":~/.local/bin
 [[ -f ~/Line_commands/myfunctions ]] && . ~/Line_commands/myfunctions
 
+export EDITOR=vim
+
