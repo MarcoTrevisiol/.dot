@@ -12,3 +12,5 @@
 [alias]
 	last = log -1 --decorate --stat HEAD
 	report = log --oneline --decorate HEAD
+[pull]
+	ff = only

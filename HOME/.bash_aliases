@@ -18,6 +18,7 @@ alias ansible-pull-main="ansible-pull -U /home/t/gitbares/personal-workstation-c
 
 alias su="su -"
 alias py="python3"
+alias gst="git status"
 
 alias jq="jq --color-output"
 alias less="less -RSQ"
