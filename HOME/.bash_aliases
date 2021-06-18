@@ -25,6 +25,6 @@ alias less="less -RSQ"
 alias man="man -P 'less -Q'"
 alias pdflatex="pdflatex -interaction=nonstopmode"
 
-alias rmview="rmview ~/Line_commands/mia_config.json"
+alias rmview="rmview ~/Line_commands/rmview_mia_config.json"
 alias clean="rm *~ .*~"
 
