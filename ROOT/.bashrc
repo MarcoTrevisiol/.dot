@@ -79,19 +79,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -AlhF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Some more alias:
-alias rm='rm -v'
-alias cp='cp -v'
-alias mv='mv -v'
-
-alias ansible-pull="ANSIBLE_FORCE_COLOR=true ansible-pull"
-alias ansible-pull-root="ansible-pull -U /home/t/gitbares/personal-workstation-config.git/ root_user_config.yml"
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
