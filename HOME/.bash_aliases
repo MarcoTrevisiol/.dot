@@ -6,6 +6,7 @@ alias cp='cp -v'
 alias mv='mv -v'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 
 alias common='cd /afs/uz.sns.it/common/'
 alias commath='cd /afs/uz.sns.it/common/text/libri/matematica'

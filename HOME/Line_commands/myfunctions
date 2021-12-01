@@ -27,3 +27,15 @@ function Mine
 	java -jar MagicLauncher.jar
 }
 
+function SyncLezioni
+{
+	cd ~/cloud/Shared_GDrive_uniroma1/
+	rclone -v --drive-shared-with-me sync drive_uniroma1:Lezioni/ Lezioni/
+}
+
+function UpSync2122
+{
+	cd ~/cloud/Shared_GDrive_uniroma1/
+	rclone -v --drive-shared-with-me sync Lezioni/21-22/ drive_uniroma1:Lezioni/21-22/
+}
+

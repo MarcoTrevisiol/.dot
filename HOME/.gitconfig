@@ -14,3 +14,5 @@
 	report = log --oneline --decorate HEAD
 [pull]
 	ff = only
+[color "diff"]
+	whitespace = red reverse
