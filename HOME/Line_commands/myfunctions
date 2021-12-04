@@ -39,3 +39,12 @@ function UpSync2122
 	rclone -v --drive-shared-with-me sync Lezioni/21-22/ drive_uniroma1:Lezioni/21-22/
 }
 
+function repush
+{
+	[[ -f "$1" ]] || { echo 'Missing PDF file to upload' >&2; return 1; }
+	[[ "$1" =~ .[pP][dD][fF]$ ]] || { echo 'Only PDF files supported' >&2; return 1; }
+	curl 'http://10.11.99.1/upload' -H 'Origin: http://10.11.99.1' -H 'Accept: */*' -H 'Referer: http://10.11.99.1/' -H 'Connection: keep-alive' -F "file=@$1;filename=$1;type=application/pdf" | jq
+	echo
+}
+
+
