@@ -7,6 +7,7 @@ alias mv='mv -v'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias .....='cd ../../../..'
 
 alias common='cd /afs/uz.sns.it/common/'
 alias commath='cd /afs/uz.sns.it/common/text/libri/matematica'
@@ -26,6 +27,7 @@ alias less="less -RSQ"
 alias man="man -P 'less -Q'"
 alias pdflatex="pdflatex -interaction=nonstopmode"
 
-alias rmview="rmview ~/Line_commands/rmview_mia_config.json"
+alias rmviewl="rmview ~/Line_commands/rmview_config_l.json"
+alias rmviewp="rmview ~/Line_commands/rmview_config_p.json"
 alias clean="rm *~ .*~"
 
