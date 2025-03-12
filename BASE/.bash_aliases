@@ -9,11 +9,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-alias common='cd /afs/uz.sns.it/common/'
-alias commath='cd /afs/uz.sns.it/common/text/libri/matematica'
-
 alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
-alias clip="xclip -sel cli"
 
 alias su="su -"
 alias py="python3"
@@ -22,9 +18,10 @@ alias gst="git status"
 alias jq="jq --color-output"
 alias less="less -RSQ"
 alias man="man -P 'less -Q'"
-alias pdflatex="pdflatex -interaction=nonstopmode"
-
-alias rmviewl="rmview ~/Line_commands/rmview_config_l.json"
-alias rmviewp="rmview ~/Line_commands/rmview_config_p.json"
 alias clean="rm *~ .*~"
+alias iex='iex -S mix'
+
+function p {
+  mix p "$1" && cd "$1"
+}
 

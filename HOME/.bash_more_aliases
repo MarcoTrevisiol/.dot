@@ -1,0 +1,10 @@
+alias common='cd /afs/uz.sns.it/common/'
+alias commath='cd /afs/uz.sns.it/common/text/libri/matematica'
+
+alias clip="xclip -sel cli"
+
+alias pdflatex="pdflatex -interaction=nonstopmode"
+
+alias rmviewl="rmview ~/Line_commands/rmview_config_l.json"
+alias rmviewp="rmview ~/Line_commands/rmview_config_p.json"
+
