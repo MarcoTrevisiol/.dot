@@ -1,0 +1,45 @@
+[core]
+	editor = /usr/bin/vim
+[user]
+	name = Marco Trevisiol
+	email = marco.trevisiol@deimosholding.com
+[alias]
+	report = log --oneline --decorate
+	last = log -1 --stat HEAD
+	fast = commit -a --amend --no-edit
+	pushall = !git push && git push --tags
+	heads = for-each-ref --sort=-committerdate --format='%(HEAD) %(align:50)%(color:yellow)%(refname:short)%(color:reset)%(end) - %(align:22)%(color:green)%(committerdate:relative)%(color:reset)%(end) - %(align:22)%(color:red)%(authorname)%(color:reset)%(end) - %(contents:subject)' --count=20
+	sync = fetch --all --prune --tags --prune-tags --progress
+[pull]
+	rebase = true
+[help]
+	autoCorrect = prompt
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	rename = true
+[push]
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoUpdate = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
