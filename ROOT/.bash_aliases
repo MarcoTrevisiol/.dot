@@ -9,9 +9,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-alias ansible-pull="ANSIBLE_FORCE_COLOR=true ansible-pull"
-alias ansible-pull-root="ansible-pull -U /home/t/gitbares/personal-workstation-config.git/ root_user_config.yml"
-
 
 alias su="su -"
 alias py="python3"
