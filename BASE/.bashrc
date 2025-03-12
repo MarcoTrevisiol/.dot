@@ -113,5 +113,6 @@ fi
 [[ -f ~/Line_commands/myfunctions ]] && . ~/Line_commands/myfunctions
 
 export EDITOR=vim
+export LESSCHARSET=utf-8
 export ERL_AFLAGS="-kernel shell_history enabled"
 
