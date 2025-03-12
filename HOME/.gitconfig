@@ -1,18 +1,52 @@
 [user]
 	email = marco@trevisiol.casa
 	name = MarcoTrevisiol
-[push]
-	default = matching
 [color]
 	ui = auto
+[color "diff"]
+	whitespace = red reverse
 [credential]
 	helper = store
 [core]
-	editor = vim
+	editor = /usr/bin/vim
 [alias]
-	last = log -1 --decorate --stat HEAD
-	report = log --oneline --decorate HEAD
+	report = log --oneline --decorate
+	last = log -1 --stat HEAD
+	fast = commit -a --amend --no-edit
+	pushall = !git push && git push --tags
+	heads = for-each-ref --sort=-committerdate --format='%(HEAD) %(align:50)%(color:yellow)%(refname:short)%(color:reset)%(end) - %(align:22)%(color:green)%(committerdate:relative)%(color:reset)%(end) - %(align:22)%(color:red)%(authorname)%(color:reset)%(end) - %(contents:subject)' --count=20
+	sync = fetch --all --prune --tags --prune-tags --progress
 [pull]
-	ff = only
-[color "diff"]
-	whitespace = red reverse
+	rebase = true
+[push]
+	default = matching
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autoCorrect = prompt
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	rename = true
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoUpdate = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
