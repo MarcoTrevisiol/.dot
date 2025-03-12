@@ -1,6 +1,5 @@
-[user]
-	email = marco@trevisiol.casa
-	name = MarcoTrevisiol
+[include]
+  path = .gitconfig-user
 [color]
 	ui = auto
 [color "diff"]
