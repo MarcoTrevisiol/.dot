@@ -1,0 +1,38 @@
+alias psql='psql -d "$ConnectionStrings__PostgresQuestDbPython" -c'
+
+alias json-to-excel='python ~/Scripts/json-to-excel.py'
+alias make-dependencies='python ~/Scripts/make_dependencies.py'
+alias plot-nav='python ~/Scripts/plot-nav.py'
+alias plot-trades='python ~/Scripts/plot-trades.py'
+alias symbol='python ~/Scripts/plot-symbol.py'
+alias split='python ~/Scripts/query.py split'
+alias dividend='python ~/Scripts/query.py dividend'
+alias price='python ~/Scripts/query.py price -s'
+alias latest='python ~/Scripts/query-latest.py'
+alias expand-grid='python ~/Scripts/expand-grid.py'
+
+function mimport {
+	mongoimport "${ConnectionStrings__MongoDb}" --authenticationDatabase=admin "$@"
+}
+
+function mexport {
+	mongoexport "${ConnectionStrings__MongoDb}" --authenticationDatabase=admin "$@"
+}
+
+function is {
+	mexport -d identifiers -c identifiers --type=csv -f Identifier,SecurityType,Exchange,Symbol,Name -q '{"SecurityType":{"$in":[1,2,3]}}' 2>/dev/null | grep "$1"
+}
+function allocations {
+	mexport -d allocations_development -c allocations -q '{"NameId":{"$regex":"'${1}'"}}' 2>/dev/null
+}
+function import-general-allocation {
+	mimport --upsert --upsertFields NameId "$@"
+}
+function import-allocation {
+	import-general-allocation -d allocations_development -c allocations "$@"
+}
+
+function pretty-csv {
+	perl -pe 's/((?<=,)|(?<=^)),/ ,/g;' -e 's/([0-9]+\.[0-9][0-9])[0-9]*/\1/g' | column -t -s, -R 1,2,3,4,5,6,7,8,9 | less -S -F -X -K
+}
+

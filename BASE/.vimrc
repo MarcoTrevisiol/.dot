@@ -10,11 +10,18 @@ else
   endif
 endif
 
+" Quickly insert an empty new line without entering insert mode
+nnoremap <C-o> o<Esc>
+
 set mouse=
 filetype plugin on
 filetype indent on
-syntax on
 set visualbell
 
-" Quickly insert an empty new line without entering insert mode
-nnoremap <C-o> o<Esc>
+set shiftwidth=2 smarttab
+set tabstop=2
+set expandtab!
+hi Visual cterm=bold ctermbg=darkgray ctermfg=NONE
+syntax on
+colorscheme koehler
+
