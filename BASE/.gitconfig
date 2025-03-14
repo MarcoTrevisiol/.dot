@@ -7,7 +7,7 @@
 [credential]
 	helper = store
 [core]
-	editor = /usr/bin/vim
+	editor = vim
 [alias]
 	report = log --oneline --decorate
 	last = log -1 --stat HEAD
@@ -49,3 +49,5 @@
 	autoSquash = true
 	autoStash = true
 	updateRefs = true
+[merge]
+	conflictstyle = zdiff3
