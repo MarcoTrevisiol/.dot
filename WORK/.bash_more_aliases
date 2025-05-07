@@ -8,7 +8,8 @@ alias symbol='python ~/Scripts/plot-symbol.py'
 alias split='python ~/Scripts/query.py split'
 alias dividend='python ~/Scripts/query.py dividend'
 alias price='python ~/Scripts/query.py price -s'
-alias latest='python ~/Scripts/query-latest.py'
+alias identifier='python ~/Scripts/query-identifier.py'
+alias sessions='python ~/Scripts/query-sessions.py'
 alias expand-grid='python ~/Scripts/expand-grid.py'
 
 function mimport {
