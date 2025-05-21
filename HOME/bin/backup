@@ -1,0 +1,26 @@
+# Directories to back up
+SRC_DIRS := dossier
+
+# Backup root directory
+BACKUP_ROOT := ~/backups
+
+# Date format for backup folder (yyyy-mm-dd)
+DATE := $(shell date +%F)
+
+# Destination directory
+DEST_DIR := $(BACKUP_ROOT)/$(DATE)
+
+# The default target
+.PHONY: backup
+backup: $(DEST_DIR)
+
+# Rule to create the dated backup directory and sync contents
+$(DEST_DIR):
+	@echo "Creating backup directory and syncing files to: $@"
+	mkdir -p "$@"
+	@for dir in $(SRC_DIRS); do \
+		echo "Backing up $$dir to $@/$$dir"; \
+		rsync -av --delete "$$dir/" "$@/$$dir/"; \
+	done
+	@echo "Backup completed to $@"
+
