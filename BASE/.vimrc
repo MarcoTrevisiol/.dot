@@ -25,3 +25,6 @@ hi Visual cterm=bold ctermbg=darkgray ctermfg=NONE
 syntax on
 colorscheme koehler
 
+set backupdir=/tmp//
+set directory=/tmp//
+set undodir=/tmp//
