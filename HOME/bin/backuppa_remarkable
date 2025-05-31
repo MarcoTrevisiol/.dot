@@ -1,0 +1,22 @@
+#!/bin/bash
+
+temp_dir="/tmp/remarkable"
+backup_root="/home/t/Backups/"
+
+# Copying files from remarkable to a temporary location
+mkdir -p "${temp_dir}"
+cd "${temp_dir}"
+#scp -r "remarkable:/home/root/.local/share/remarkable/xochitl/" .
+rsync -avP --rsync-path="/home/root/.entware/bin/rsync" "remarkable:/home/root/.local/share/remarkable/xochitl" "${temp_dir}"
+
+# Getting the last backup directory
+backup_dir=
+for filename in "${backup_root}Backup_"* ; do
+    [[ -L ${filename} || ! -d ${filename} ]] && continue
+    [[ -z ${backup_dir} || ${filename} -nt ${backup_dir} ]] && backup_dir="${filename}"
+done
+
+# Storing remarkable files into the last backup directory
+echo "Directory used" "${backup_dir}"
+tar -cf "${backup_dir}/remarkable.tar" "xochitl/"
+
