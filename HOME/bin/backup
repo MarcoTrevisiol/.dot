@@ -1,26 +1,19 @@
+#!/usr/bin/make -f
 # Directories to back up
-SRC_DIRS := dossier
+SRC_DIRS := dossier attività
 
-# Backup root directory
 BACKUP_ROOT := ~/backups
-
-# Date format for backup folder (yyyy-mm-dd)
+LATEST_BACKUP := $(BACKUP_ROOT)/latest
 DATE := $(shell date +%F)
+DEST_DIR := $(BACKUP_ROOT)/backup-$(DATE)
 
-# Destination directory
-DEST_DIR := $(BACKUP_ROOT)/$(DATE)
-
-# The default target
-.PHONY: backup
 backup: $(DEST_DIR)
 
-# Rule to create the dated backup directory and sync contents
-$(DEST_DIR):
-	@echo "Creating backup directory and syncing files to: $@"
+$(DEST_DIR): $(LATEST_BACKUP)
 	mkdir -p "$@"
-	@for dir in $(SRC_DIRS); do \
-		echo "Backing up $$dir to $@/$$dir"; \
-		rsync -av --delete "$$dir/" "$@/$$dir/"; \
-	done
-	@echo "Backup completed to $@"
+	rsync --dry-run -av --link-dest="${LATEST_BACKUP}" --delete ${SRC_DIRS} "$@/"
 
+$(LATEST_BACKUP):
+	mkdir -p "$@"
+
+.PHONY: backup

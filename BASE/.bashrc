@@ -58,9 +58,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-  PS1='\e[01;31m$(code=${?##0};echo ${code:+[${code}]})\e[00m\[\e[01;33m\]\t\[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[01;33m\]$(__git_ps1 " (%s)")\[\e[00m\]\$ '
+  PS1='\[\e[01;33m\]\t\[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[01;33m\]$(__git_ps1 " (%s)")\[\e[00m\]$(code=${?##0}; echo ${code:+\[\e[41m\]} )\$\[\e[0m\] '
 else
-  PS1='$(code=${?##0};echo ${code:+[${code}]})\t\u@\h:\w$(__git_ps1 " (%s)")\$ '
+  PS1='\t\u@\h:\w$(__git_ps1 " (%s)")$(code=${?##0};echo ${code:+X})\$ '
 fi
 unset color_prompt force_color_prompt
 
