@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 # Directories to back up
-SRC_DIRS := dossier attività
+SRC_DIRS := dossier
 
-BACKUP_ROOT := ~/backups
+BACKUP_ROOT := ~/riserva
 LATEST_BACKUP := $(BACKUP_ROOT)/latest
 DATE := $(shell date +%F)
 DEST_DIR := $(BACKUP_ROOT)/backup-$(DATE)

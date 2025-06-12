@@ -6,7 +6,7 @@
 # absolute path. No other format is supported.
 # 
 XDG_DESKTOP_DIR="$HOME/banco"
-XDG_DOWNLOAD_DIR="$HOME/scalo"
+XDG_DOWNLOAD_DIR="$HOME/transito"
 XDG_TEMPLATES_DIR="/nonexistent"
 XDG_PUBLICSHARE_DIR="/nonexistent"
 XDG_DOCUMENTS_DIR="$HOME/dossier"
