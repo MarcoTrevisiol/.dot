@@ -1,17 +1,19 @@
 #!/usr/bin/make -f
 # Directories to back up
-SRC_DIRS := dossier
+SRC_DIRS := archivio dossier scrigno snodo
 
 BACKUP_ROOT := ~/riserva
 LATEST_BACKUP := $(BACKUP_ROOT)/latest
 DATE := $(shell date +%F)
-DEST_DIR := $(BACKUP_ROOT)/backup-$(DATE)
+DEST_BASE := backup-$(DATE)
+DEST_DIR := $(BACKUP_ROOT)/$(DEST_BASE)
 
 backup: $(DEST_DIR)
 
 $(DEST_DIR): $(LATEST_BACKUP)
 	mkdir -p "$@"
-	rsync --dry-run -av --link-dest="${LATEST_BACKUP}" --delete ${SRC_DIRS} "$@/"
+	rsync -av --link-dest="${LATEST_BACKUP}" --delete ${SRC_DIRS} "$@/"
+	ln -sf "${DEST_BASE}" "${LATEST_BACKUP}"
 
 $(LATEST_BACKUP):
 	mkdir -p "$@"
