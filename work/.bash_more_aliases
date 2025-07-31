@@ -8,9 +8,12 @@ alias chart='python ~/Scripts/plot-symbol.py'
 alias split='python ~/Scripts/query.py split'
 alias dividend='python ~/Scripts/query.py dividend'
 alias price='python ~/Scripts/query.py price -s'
-alias identifier='python ~/Scripts/query-identifier.py'
 alias sessions='python ~/Scripts/query-sessions.py'
 alias expand-grid='python ~/Scripts/expand-grid.py'
+
+function figi {
+  python ~/Scripts/query-identifier.py "$1" | jq
+}
 
 function mimport {
 	mongoimport "${ConnectionStrings__MongoDb}" --authenticationDatabase=admin "$@"
@@ -22,6 +25,9 @@ function mexport {
 
 function is {
 	mexport -d identifiers -c identifiers --type=csv -f Identifier,SecurityType,Exchange,Symbol,Name -q '{"SecurityType":{"$in":[1,2,3]}}' 2>/dev/null | grep "$1"
+}
+function isf {
+	mexport -d identifiers -c identifiers --type=csv -f Identifier,SecurityType,Exchange,Symbol,Name -q '{"SecurityType":6}' --sort='{"ExpirationDate":1}' 2>/dev/null | grep "$1"
 }
 function allocations {
 	mexport -d allocations_development -c allocations -q '{"NameId":{"$regex":"'${1}'"}}' 2>/dev/null
