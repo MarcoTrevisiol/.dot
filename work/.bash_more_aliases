@@ -24,10 +24,15 @@ function mexport {
 }
 
 function is {
-	mexport -d identifiers -c identifiers --type=csv -f Identifier,SecurityType,Exchange,Symbol,Name -q '{"SecurityType":{"$in":[1,2,3]}}' 2>/dev/null | grep "$1"
+	mexport -d identifiers -c identifiers --type=csv -f Identifier,SecurityType,Exchange,Symbol,Name -q '{"SecurityType":{"$in":[1,2,3,5]}}' 2>/dev/null | grep "$1"
 }
 function isf {
-	mexport -d identifiers -c identifiers --type=csv -f Identifier,SecurityType,Exchange,Symbol,Name -q '{"SecurityType":6}' --sort='{"ExpirationDate":1}' 2>/dev/null | grep "$1"
+	mexport -d identifiers -c identifiers --type=csv -f Identifier,Exchange,Symbol,Multiplier,SettlementMethod,ExpirationDate,Name -q '{"SecurityType":6}' --sort='{"ExpirationDate":1}' 2>/dev/null | grep "$1"
+}
+function iso {
+  identifier=$(mexport -d identifiers -c identifiers --type=csv -f Identifier -q '{"SecurityType":{"$in":[1,2,3,5,6]},"Symbol":"'"$1"'"}' 2>/dev/null | tail -n 1)
+  echo "symbol=$1,identifier=${identifier}"
+	mexport -d identifiers -c identifiers --type=csv -f Identifier,Exchange,Multiplier,SettlementMethod,Right,Underlying,Strike,ExpirationDate -q '{"SecurityType":4,"Underlying":"'"$identifier"'"}' 2>/dev/null
 }
 function allocations {
 	mexport -d allocations_development -c allocations -q '{"NameId":{"$regex":"'${1}'"}}' 2>/dev/null
