@@ -3,7 +3,8 @@
 SRC_DIRS := archivio dossier scrigno snodo
 
 BACKUP_ROOT := ~/riserva
-LATEST_BACKUP := $(BACKUP_ROOT)/latest
+LATEST_LINK := $(BACKUP_ROOT)/latest
+LATEST_BACKUP := $(shell readlink -f $(LATEST_LINK))
 DATE := $(shell date +%F)
 DEST_BASE := backup-$(DATE)
 DEST_DIR := $(BACKUP_ROOT)/$(DEST_BASE)
@@ -13,7 +14,7 @@ backup: $(DEST_DIR)
 $(DEST_DIR): $(LATEST_BACKUP)
 	mkdir -p "$@"
 	rsync -av --link-dest="${LATEST_BACKUP}" --delete ${SRC_DIRS} "$@/"
-	ln -sf "${DEST_BASE}" "${LATEST_BACKUP}"
+	ln -sfT "${DEST_BASE}" ${LATEST_LINK}
 
 $(LATEST_BACKUP):
 	mkdir -p "$@"
