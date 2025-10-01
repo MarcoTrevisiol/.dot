@@ -28,5 +28,5 @@ fi
 
 umask 022
 
-neofetch
+fastfetch
 
