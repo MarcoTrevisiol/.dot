@@ -4,4 +4,6 @@ TERM = 'xterm-256color'
 size = 8
 [selection]
 semantic_escape_chars = "=│`|:\"' ()[]{}<>\t"
+[window]
+opacity = 0.25
 
