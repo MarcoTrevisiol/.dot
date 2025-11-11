@@ -2,3 +2,4 @@
 
 alacritty &
 firefox &
+Telegram &
